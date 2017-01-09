@@ -1,7 +1,7 @@
 <?php
 
 function test(){
-	$var ="bonjour";
+	$var ="true";
 	echo $var;
 }
 test();
