@@ -16,5 +16,5 @@ $mois = [
 "Décembre"
 
 	];
-var_dump($mois);
+echo$mois[5];
 ?>
