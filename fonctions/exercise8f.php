@@ -1,10 +1,10 @@
 <?php
 
-function number($a, $b, $c)
+function number($a=2, $b=3, $c=4)
 {
 	return $a + $b + $c;
 }
 
-echo number(2,3,4);
+echo number();
 
 ?>
