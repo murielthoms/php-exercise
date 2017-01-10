@@ -7,6 +7,6 @@ $hautsFrance = array(
 	"80"=>"Somme"
 	);
 
-
+$hautsFrance["51"] ="Reims";
 var_dump($hautsFrance);
 ?>

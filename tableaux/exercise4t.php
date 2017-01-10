@@ -16,6 +16,6 @@ $mois = [
 "Décembre"
 
 	];
- $mois[7]="août";
+ $mois[7]="Août";
  var_dump($mois);
 ?>
