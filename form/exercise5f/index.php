@@ -25,8 +25,17 @@
 		<div>
 			<button type="submit" name="valider">Validez</button>
 		</div>
-
 	</form>
+<!--  
+	<div>
+		<ul>
+			<li><?= $_GET['prenom']?></li>
+			<li><?= $_GET['nom']?></li>
+			<li><?= $_GET['genre']?></li>
+			
+		</ul>
+	</div>
+-->
 	
 	
 </body>
