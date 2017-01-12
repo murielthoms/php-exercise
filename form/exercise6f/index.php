@@ -1,6 +1,6 @@
 <?php
-if (isset($_GET['nom']) && isset($_GET['prenom']) && isset($_GET['genre']) && !empty($_GET['nom'] && !empty($_GET['prenom']))) {
-	echo 'Bonjour'."\n". $_GET['prenom']." \n".$_GET['nom']."\n";
+if  !empty($_GET) || !empty($_POST) {
+	echo 'Bonjour'."\n". $_GET['prenom']." \n".$_GET['nom']."\n".$_GET['genre'];
 	}else{
 		include __DIR__.'/../exercise5f/index.php';
 	}
