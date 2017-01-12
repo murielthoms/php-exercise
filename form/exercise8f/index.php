@@ -6,16 +6,11 @@
 	<title>Document</title>
 </head>
 <body>
-<?php
-if  (empty($_GET)){
-	 
-
- 	
-
-?>
+	<?php
+	if(empty($_POST)){?>
 
 
-	<form method="_GET" enctype="multipart/form-data" action="">
+	<form method="post" enctype="multipart/form-data" action="">
 		<select name="genre">
 
 			<option value="Mme">Madame</option>
@@ -34,21 +29,30 @@ if  (empty($_GET)){
 		</div>
 
 		<div>
-		<input required="required"type= "file" name="fichier">
-		<button type="submit" name="envoi">Envoyer</button>	
+			<input required="required" type="file" name="fichier">
+			<button type="submit" name="envoi">Envoyer</button>	
 		</div>
 		<div>
 
 		</div>
 	</form>
 	<?php
+}else{
+	echo 'Bonjour'." ". $_GET['genre']." ".$_GET['nom']." ".$_GET['prenom']." ".$_FILES['fichier']['name'];
 }
-else{
-	echo 'Bonjour'." ". $_GET['prenom']." ".$_GET['nom']." ".$_GET['genre']."".$_GET['fichier'];
+
+$infosfichier =pathinfo($_FILES['fichier']['name']);
+$extension = $infosfichier['extension'];
+
+if ($extension === 'pdf') {
+	echo $extension;
+
+}else if(!empty($_FILES)){
+
+	echo 'Extension de fichier non autorisée';
 }
+
 ?>
 
- 	
-	
 </body>
 </html>
