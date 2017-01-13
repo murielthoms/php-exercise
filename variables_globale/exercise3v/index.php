@@ -1,9 +1,3 @@
-<?php
-setcookie('pseudo', $_POST['identifiant'], time()+ 365*24*3600);
-setcookie('mdp', $_POST['mdp'], time() + 365*24*3600);
-?>
-
-
 
 
 <!DOCTYPE html>
@@ -13,7 +7,6 @@ setcookie('mdp', $_POST['mdp'], time() + 365*24*3600);
 	<title>Document</title>
 </head>
 <body>
-
 
 	<form action="" method="post">
 		<div>
@@ -25,7 +18,6 @@ setcookie('mdp', $_POST['mdp'], time() + 365*24*3600);
 			<p><input type="text" name="mdp"></p>
 		</div>
 		<button type="submit">Se connecter</button>
-
 
 	</form>
 	
